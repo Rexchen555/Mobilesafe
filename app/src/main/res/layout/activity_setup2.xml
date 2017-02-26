@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dingchen.mobilesafe.Setup2Activity">
+    <TextView
+        style="@style/TitleStytle"
+        android:text="Step two"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binding SIM card:\nif we find SIM card changed, we will alarm"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+
+        />
+    <com.example.dingchen.mobilesafe.SettingItemView
+        xmlns:mobilesafe="http://schemas.android.com/apk/res/com.example.dingchen.mobilesafe"
+        android:id="@+id/siv_sim_bount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        mobilesafe:destitle="click bind SIM card"
+        mobilesafe:desoff="SIM unbind"
+        mobilesafe:deson="SIM bound"></com.example.dingchen.mobilesafe.SettingItemView>
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@android:drawable/presence_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@android:drawable/presence_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@android:drawable/presence_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@android:drawable/presence_invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:background="@drawable/bind"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--有一个图片选择器，在选中和未选中直接切换 -->
+        <Button
+            style="@style/preBtn"/>
+        <Button
+            style="@style/nextBtn"/>
+    </RelativeLayout>
+</LinearLayout>

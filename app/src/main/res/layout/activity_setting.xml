@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dingchen.mobilesafe.SettingActivity">
+    <TextView
+        style="@style/TitleStytle"
+        android:text="Setting"/>
+<com.example.dingchen.mobilesafe.SettingItemView
+    xmlns:mobilesafe="http://schemas.android.com/apk/res/com.example.dingchen.mobilesafe"
+    android:id="@+id/siv_update"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    mobilesafe:destitle="Update Setting"
+    mobilesafe:desoff="Automatic updates closed"
+    mobilesafe:deson="Automatic updates open"
+    >
+
+</com.example.dingchen.mobilesafe.SettingItemView>
+
+
+</LinearLayout>

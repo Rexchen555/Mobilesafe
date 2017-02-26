@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dingchen.mobilesafe.HomeActivity">
+    <TextView
+    android:text="Function List"
+    style="@style/TitleStytle"/>
+    <!--ellipsize表示省略点的位置 -->
+
+<com.example.dingchen.mobilesafe.FocusTextView
+    android:text="This is design by hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+    android:textColor="#000"
+    android:singleLine="true"
+    android:padding="5dp"
+    android:ellipsize="marquee"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    ></com.example.dingchen.mobilesafe.FocusTextView>
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="10dp">
+
+    </GridView>
+</LinearLayout>

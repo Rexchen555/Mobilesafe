@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup_over"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dingchen.mobilesafe.SetupOverActivity">
+    <TextView
+        style="@style/TitleStytle"
+       android:text="Mobile protect"/>
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="safe number:"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_safe_number"
+            android:layout_alignParentRight="true"
+            android:text="0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/tv_safe_number"
+            android:background="@drawable/listview_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="protect:"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@drawable/lock"
+            android:id="@+id/iv_lock"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <ImageView
+
+            android:layout_below="@id/iv_lock"
+            android:background="@drawable/listview_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_reset_setup"
+        android:text="Enter guide again"
+        android:background="@drawable/selector_mobilesafe_reset_setup_bg"
+
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Function:"
+        android:background="#ccc"
+        android:textSize="18sp"
+        android:padding="8sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="GPS track: #*location*#"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="play alarm music: #*alarm*#"/>
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="remote lock: #*lockscreen*#"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:text="wipe data: #*data*#"
+        android:textColor="#000"/>
+</LinearLayout>
